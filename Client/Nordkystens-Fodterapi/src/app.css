@@ -1,23 +1,10 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #81c7ef;
   text-decoration: inherit;
 }
 a:hover {
@@ -26,56 +13,129 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
   min-height: 100vh;
+  width: 100%;
+  background-color: #81c7ef;
+  color: #333; /* dark gray color for text, change as per your design */
+  line-height: 1.6;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#app {
-  max-width: 1280px;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 400px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.6);
+  border-radius: 5px;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.2s;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  color: white;
+  background-color: #0c2fdf;
+  -webkit-text-stroke: 0.5px black;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  background-color: #81c7ef;
+  color: black;
+}
+
+input:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+  color: black;
+}
+
+textarea:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+textarea::placeholder {
+  color: black;
+}
+
+::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.fixed-div {
+  position: static;
+  padding: 15px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(51, 51, 51, 0.6);
+  border-radius: 5px;
 }
