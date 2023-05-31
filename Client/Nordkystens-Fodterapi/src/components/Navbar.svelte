@@ -7,7 +7,10 @@
   <Router>
     <nav>
       <Link to="/">Hjem</Link>
+      <Link to="/behandlinger">Behandlinger</Link>
+      <Link to="/indlæg">Indlæg</Link>
       <Link to="/kontakt">Kontakt</Link>
+      <Link to="/ommig">Om Mig</Link>
     </nav>
   </Router>
 </main>
@@ -16,11 +19,12 @@
   nav {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     top: 0;
     width: 100vw;
     height: 35px;
-    background-color: #271983; /* or any color you prefer */
+    background-color: #271983;
   }
+
 </style>

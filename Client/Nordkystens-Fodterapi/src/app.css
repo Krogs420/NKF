@@ -31,7 +31,6 @@ h1 {
 }
 
 p {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -132,10 +131,106 @@ textarea::placeholder {
   padding: 15px;
 }
 
-.container {
+.container-footer {
   max-width: 400px;
   margin: 0 auto;
   padding: 30px;
   background-color: rgba(51, 51, 51, 0.6);
   border-radius: 5px;
+}
+
+.videobox {
+  background-color: #823535;
+  color: white;
+  margin-left: 20px;
+  width: 95vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.infobox-one {
+  width: 95vw;
+}
+
+.left-picturebox {
+  background-color: #333;
+  color: white;
+  margin-left: 20px;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.right-picturebox {
+  margin-left: auto; /* Added margin-left: auto */
+  margin-right: 20px;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: white;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  background-color: white;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
